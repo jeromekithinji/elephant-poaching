@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Jerome Kithinji | Software Engineer | Portfolio - Elephant Poaching
+        </title>
+        <meta
+            name="description"
+            content="A Javascript dashboard to show insights on Elephant Poaching"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="../node_modules/chart.js/dist/chart.js"></script>
+        <script src="main.js" type="module"></script>
+    </head>
+    <body>
+        <header class="header-container">
+            <div class="heading-container">
+                <img
+                    class="logo-elephant"
+                    src="assets/images/"
+                    alt="Elephant icon"
+                />
+                <h1>Elephant Poaching</h1>
+            </div>
+            <hr class="divider" />
+            <h2>Global Insights Dashboard</h2>
+            <p>
+                Insights are driven by several organizations and insitutions
+                dataset on elephant poaching and represents years from the
+                1980's to 2021.
+            </p>
+        </header>
+        <main>
+            <h3>Cases in India</h3>
+            <section class="section-container">
+                <article class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="indiaChart" width="200" height="200"></canvas>
+                    </div>
+                </article>
+                <ul class="list-container">
+                    <li class="list-item">
+                        Number of shark cases seems to be increasing over time
+                    </li>
+                    <li class="list-item">
+                        Sharp decrease in cases during 2018 and 2019
+                    </li>
+                </ul>
+            </section>
+
+            <h3>Cases by country</h3>
+            <section class="section-container">
+                <article class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="kenyaChart" width="400" height="400"></canvas>
+                    </div>
+                </article>
+                <ul class="list-container">
+                    <li class="list-item">
+                        49% of total cases are from the USA followed by 19% from
+                        Australia
+                    </li>
+                </ul>
+            </section>
+
+            <h3>Cases in Kenya</h3>
+            <section class="section-container">
+                <article class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="kenyaChart" width="400" height="400"></canvas>
+                    </div>
+                </article>
+                <ul class="list-container">
+                    <li class="list-item">
+                        49% of total cases are from the USA followed by 19% from
+                        Australia
+                    </li>
+                </ul>
+            </section>
+
+            <h3>Cases in South Africa</h3>
+            <section class="section-container">
+                <article class="chart-container">
+                    <div class="chart-item">
+                        <canvas id="southAfricaChart" width="400" height="400"></canvas>
+                    </div>
+                </article>
+                <ul class="list-container">
+                    <li class="list-item">
+                        49% of total cases are from the USA followed by 19% from
+                        Australia
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <hr class="divider" />
+        <footer class="footer-container">
+            <a href="https://www.poachingfacts.com/poaching-statistics/elephant-poaching-statistics/">Source: Poaching Facts - Elephant Poaching Statistics
+            </a>
+            <img class="icon-shark" src="assets/images/" alt="Elephant icon"/>
+        </footer>
+    </body>
+</html>
+
+<!-- // Add welcome/opening page of an elepahnt walking or appearing then dissapearing -->
